@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <body>
+    <h1 style="color:blue; font-size:55px;">Website of Cory Chang</h1>
+    <h2>CS3 Website | 03.19.2004</h2>
+    <p>I participate in many CTF competitions with my team, Gorb. In addition, I have recently been a Platnium Semifinalist of CyberPatriots, the Air Force Association's cyber defense competition. I have a passion for cybersecurity in all aspects.</p><br>
+    <p>As a member of the Lake Travis Debate team, I have participated in many different tournaments in the National Speech and Debate Association circuit. My main event is Public Forum, and I also do Foreign Extemporaneous Speaking.</p><br>
+    <p>I have an interest in computer science and programming. I have recently began learning Java and Python as my languages. My portfolio of code can be found on GitHub, by clicking the link below.</p>
+    <a href="https://github.com/ccory2004" class="special">Learn more</a><br>
+    <p>My CompTIA Security+ Certificate(technically not an image...)</p>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4dcd74e6-4444-40da-9675-4da4a0f79d43" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+    <hr>
+    <p>My code</p>
+    <pre>
+      #Coding Practice 2 | Cory Chang | 10/15/2020
+      print("Fibonacci Sequence")
+
+      #getting correct input from the user
+      while True:
+          try:
+              num = int(input("Enter the number of Fibonacci Seqence numbers to print out: "))
+              if num < 2:
+                  print("Please enter an integer that is 2 or more")
+              else:
+                  break
+          except:
+              print("Please enter a valid input in the form of an integer")
+              pass
+
+      #actually calculating the numbers based on the number of numbers requested... thats a lot of numbers
+      fibNum = [0, 1]
+      print("")
+      print("Fibonacci Sequence: ")
+      for i in range(num):
+          if i != num-1:
+              print(str(fibNum[0]) + ", ", end ="")
+          else: #handling the last number printed, no comma there, and print new line so the prompt is on the next line
+              print(str(fibNum[0]))
+
+          #swtiching the numbers in the array for the next two numbers
+          temp = fibNum[0] + fibNum[1]
+          fibNum[0] = fibNum[1]
+          fibNum[1] = temp
+      print("")
+    </pre>
+  </body>
+</html>
