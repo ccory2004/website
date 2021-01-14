@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Debate Portfolio - Cory Chang</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-text">Cory Chang</span>
+      </div>
+    </nav>
+    <div class="container">
+      <br><br>
+      <h1 class="text-success"><b>Debate Portfolio</b></h1>
+      <hr>
+      <br>
+      <h3 class="text-success">Daily Work</h3>
+      <div class="accordion accordion-flush" id="dailywork">
+        {% for post in posts %}
+          {% if post.catagory = "daily" %}
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-daily">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
+                  {{ post.title }}
+                </button>
+              </h2>
+              <div id="{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="{{ post.num }}" data-bs-parent="dailywork">
+                <div class="accordion-body">{{ content }}</div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <br><hr><br>
+      <h3 class="text-success">Tournament Reflection</h3>
+      <div class="accordion accordion-flush" id="tournament">
+        {% for post in posts %}
+          {% if post.catagory = "tournament" %}
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-tournament">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
+                  {{ post.title }}
+                </button>
+              </h2>
+              <div id="{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="{{ post.num }}" data-bs-parent="tournament">
+                <div class="accordion-body">{{ content }}</div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <br><hr><br>
+      <h3 class="text-success">Coaching Sessions</h3>
+      <div class="accordion accordion-flush" id="coaching">
+        {% for post in posts %}
+          {% if post.catagory = "coaching" %}
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-coaching">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
+                  {{ post.title }}
+                </button>
+              </h2>
+              <div id="{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="{{ post.num }}" data-bs-parent="dailywork">
+                <div class="accordion-body">{{ content }}</div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    <br><br>
+    <nav class="navbar navbar-light bg-light">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <span>Built by <a href="https://corychang.com" class="text-decoration-none">Cory Chang</a>.</span>
+      </div>
+    </nav>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
+</html>
