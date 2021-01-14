@@ -27,7 +27,7 @@ permalink: /debate/
       <h3 class="text-success">Daily Work</h3>
       <div class="accordion accordion-flush" id="dailywork">
         {% for post in posts %}
-          {% if post.catagory = "daily" %}
+          {% if post.catagory == "daily" %}
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-heading-daily">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
@@ -45,7 +45,7 @@ permalink: /debate/
       <h3 class="text-success">Tournament Reflection</h3>
       <div class="accordion accordion-flush" id="tournament">
         {% for post in posts %}
-          {% if post.catagory = "tournament" %}
+          {% if post.catagory == "tournament" %}
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-heading-tournament">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
@@ -63,7 +63,7 @@ permalink: /debate/
       <h3 class="text-success">Coaching Sessions</h3>
       <div class="accordion accordion-flush" id="coaching">
         {% for post in posts %}
-          {% if post.catagory = "coaching" %}
+          {% if post.catagory == "coaching" %}
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-heading-coaching">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
