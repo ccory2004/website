@@ -36,7 +36,7 @@ permalink: "/debate/"
                 </button>
               </h2>
               <div id="collapse{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ post.num }}" data-bs-parent="dailywork">
-                <div class="accordion-body">{{ content }}</div>
+                <div class="accordion-body">{{ post.content }}</div>
               </div>
             </div>
           {% endif %}
@@ -54,7 +54,7 @@ permalink: "/debate/"
                 </button>
               </h2>
               <div id="collapse{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ post.num }}" data-bs-parent="tournament">
-                <div class="accordion-body">{{ content }}</div>
+                <div class="accordion-body">{{ post.content }}</div>
               </div>
             </div>
           {% endif %}
@@ -72,7 +72,7 @@ permalink: "/debate/"
                 </button>
               </h2>
               <div id="collapse{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ post.num }}" data-bs-parent="coaching">
-                <div class="accordion-body">{{ content }}</div>
+                <div class="accordion-body">{{ post.content }}</div>
               </div>
             </div>
           {% endif %}
