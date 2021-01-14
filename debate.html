@@ -47,12 +47,12 @@ permalink: /debate/
         {% for post in site.posts %}
           {% if post.catagory == "tournament" %}
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-heading-tournament">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
+              <h2 class="accordion-header" id="flush-heading{{ post.num }}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ post.num }}" aria-expanded="false" aria-controls="collapse{{ post.num }}">
                   {{ post.title }}
                 </button>
               </h2>
-              <div id="{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="{{ post.num }}" data-bs-parent="tournament">
+              <div id="collapse{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ post.num }}" data-bs-parent="tournament">
                 <div class="accordion-body">{{ content }}</div>
               </div>
             </div>
@@ -65,12 +65,12 @@ permalink: /debate/
         {% for post in site.posts %}
           {% if post.catagory == "coaching" %}
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-heading-coaching">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.num }}" aria-expanded="false" aria-controls="{{ post.num }}">
+              <h2 class="accordion-header" id="flush-heading{{ post.num }}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ post.num }}" aria-expanded="false" aria-controls="collapse{{ post.num }}">
                   {{ post.title }}
                 </button>
               </h2>
-              <div id="{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="{{ post.num }}" data-bs-parent="dailywork">
+              <div id="collapse{{ post.num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ post.num }}" data-bs-parent="dailywork">
                 <div class="accordion-body">{{ content }}</div>
               </div>
             </div>
