@@ -1,0 +1,13 @@
+---
+label: Daily
+hide_body: false
+fields:
+- type: datetime
+  name: title
+  label: title
+- type: text
+  name: num
+  label: num
+- type: text
+  name: catagory
+  label: catagory
