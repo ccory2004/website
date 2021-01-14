@@ -1,6 +1,6 @@
 ---
-title: "Test 1"
-num: "01142021"
-catagory: "daily"
+title: ""
+num: ""
+catagory: ""
 ---
-Test test test
+Hello
