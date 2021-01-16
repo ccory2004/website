@@ -5,7 +5,7 @@ catagory: tournament
 
 ---
 This tournament was great! William definitely improved a lot, and I got better at debating analytics and with lay judges.
-\
+
 ##### Round 1 (NEG, 2nd Speaking, Loss):
 
 | Person | Critiques
@@ -13,7 +13,7 @@ This tournament was great! William definitely improved a lot, and I got better a
 | Cory | Did ok, screwed up the FF a bit, was stuttering through the attack on their case
 | William | Stuttering and a bit uncertain, needs more confidence. Responses were generally good, but you could use having some more arguments. Needs to be a bit more clear about the case, and handle yourself in cross with more confidence.
 
-\
+
 ##### Round 2 (NEG, 2nd Speaking, - ):
 
 | Person | Critiques
