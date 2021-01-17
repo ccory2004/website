@@ -3,7 +3,7 @@ title: 01/15/2021 - Anderson Tournament
 num: 01162021-tournament
 catagory: tournament
 ---
-This tournament was great! William definitely improved a lot, and I got better at debating analytics and with lay judges.
+This tournament was great! William definitely improved a lot, and I got better at debating analytics and with lay judges. We went a total of 3-1, 11th seed in the tournament, but we did not break. 
 
 ##### Round 1 (NEG, 2nd Speaking, Loss):
 
